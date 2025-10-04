@@ -4,7 +4,7 @@
   letter-spacing: 0.1px;
   line-height: 20px;
   font-size: 14px;
-  color: #928787;
+  color: #0d3b61;
   font-weight: lighter;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -14,20 +14,20 @@
 .c {
   height: 100px;
   width: 100px;
-  background-color: blueviolet;
+  background-color: rgb(125, 7, 236);
   color: #fff;
 }
 
 .a {
-  transform: rotate(20deg);
+  transform: rotate(40deg);
 }
 
 /* .a {
-  transform: rotateX(180deg);
+  transform: rotateX(200deg);
 } */
 
 /* .a {
-  transform: rotateY(180deg);
+  transform: rotateY(140deg);
 } */
 
 .b {
@@ -44,7 +44,7 @@
 }
 
 .shadow {
-  text-shadow: 2px 2px 2px brown; /* x y blur color*/
+  text-shadow: 2px 2px 2px rgb(28, 1, 1); /* x y blur color*/
 }
 
 .indent {
