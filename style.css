@@ -1,57 +1,66 @@
-.typography {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  letter-spacing: 0.1px;
-  line-height: 20px;
-  font-size: 14px;
-  color: #0d3b61;
-  font-weight: lighter;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.a,
-.b,
-.c {
-  height: 100px;
-  width: 100px;
-  background-color: rgb(125, 7, 236);
-  color: #fff;
-}
-
-.a {
-  transform: rotate(40deg);
-}
-
-/* .a {
-  transform: rotateX(200deg);
-} */
-
-/* .a {
-  transform: rotateY(140deg);
-} */
-
-.b {
-  transform: skewY(20deg);
-}
-
-.c {
-  transform: scaleY(1.5);
-}
-
-.textdec {
-  text-decoration: underline; /*underline,line-through*/
-  text-transform: capitalize;
-}
-
-.shadow {
-  text-shadow: 2px 2px 2px rgb(28, 1, 1); /* x y blur color*/
-}
-
-.indent {
-  text-indent: 20px;
-}
-.boxshadow {
-  height: 200px;
-  width: 200px;
-  box-shadow: 2px 2px 5px red; /*x y blur color*/
-}
+  input{type="text"}{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  input[type="text"]:focus {
+    border-color: #66afe9;
+    outline: none;
+  }
+  input[type="text"]::placeholder {
+    color: #999;
+    opacity: 1; /* Firefox */
+  }
+  input[type="text"]:focus::placeholder {
+    color: transparent;
+  }
+  input[type="text"]:valid {
+    border-color: #28a745;
+  }
+  input[type="text"]:invalid {
+    border-color: #dc3545;
+  }
+  input[type="text"]:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  input[type="text"]:disabled::placeholder {
+    color: #ccc;
+  }
+  input[type="text"]:disabled:focus {
+    border-color: #ccc;
+    outline: none;
+  }
+  input[type="text"]:required {
+    border-color: #007bff;
+  }
+  input[type="text"]:required:valid {
+    border-color: #28a745;
+  }
+  input[type="text"]:required:invalid {
+    border-color: #dc3545;
+  }
+  input[type="text"]:required:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  input[type="text"]:required:focus::placeholder {
+    color: transparent;
+  }
+  input[type="text"]:required:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  input[type="text"]:required:disabled::placeholder {
+    color: #ccc;
+  }
+  input[type="text"]:required:disabled:focus {
+    border-color: #ccc;
+    outline: none;
+  }
+  input[type="text"]:required:valid {
+    border-color: #28a745;
+  }
